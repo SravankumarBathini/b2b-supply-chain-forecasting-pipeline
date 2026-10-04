@@ -1,0 +1,20 @@
+{
+    "simulation": {
+        "start_date": "2023-01-01",
+        "end_date": "2025-12-31",
+        "hubs": ["HUB_MUMBAI", "HUB_DELHI", "HUB_HYDERABAD", "HUB_BANGALORE"],
+        "items": ["SKU_MANGO_JUICE_01", "SKU_SWEET_PACK_02", "SKU_APPARREL_03"]
+    },
+    "signal_physics": {
+        "global_base_demand": 500.0,
+        "growth_trend_beta": 0.25,
+        "seasonal_amplitude_alpha": 120.0,
+        "noise_sigma": 15.0,
+        "festival_spike_scalar": 3.5,
+        "festival_window_start_day": 280,
+        "festival_window_end_day": 320
+    },
+    "storage": {
+        "raw_output_path": "data/01_raw/demand_logs.parquet"
+    }
+}
